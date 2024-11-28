@@ -2,18 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bookmarklet Page</title>
+    <title>Bookmarklet Checker</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { color: #333; }
+        a.bookmarklet {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        a.bookmarklet:hover { background-color: #0056b3; }
+        ol { margin-top: 20px; }
+        li { margin-bottom: 10px; }
+    </style>
 </head>
 <body>
-    <h1>Add the Bookmarklet</h1>
-    <p>Drag the link below to your bookmarks bar:</p>
-    <a href="javascript:(function(){var script=document.createElement('script');script.src='https://ufst-my.github.io/bookmarklet-checker/bookmarklet.js?cache-buster=%27+(new Date().getTime());script.type=%27text/javascript%27;document.body.appendChild(script);})();">My Bookmarklet</a>
-    <p>If drag-and-drop doesn’t work, follow these steps:</p>
+    <h1>Install the Bookmarklet Checker</h1>
+    <p>Drag the button below to your bookmarks bar:</p>
+    <a class="bookmarklet" href="javascript:(function(){var script=document.createElement('script');script.src='https://ufst-my.github.io/bookmarklet-checker/bookmarklet.js?cache-buster=%27+(new Date().getTime());script.type=%27text/javascript%27;document.body.appendChild(script);})();">Drag Me!</a>
+    <h2>Installation Instructions</h2>
     <ol>
-        <li>Right-click the link above and select <strong>“Copy link address”</strong>.</li>
-        <li>Open your bookmarks bar and create a new bookmark.</li>
-        <li>Paste the copied address into the URL field.</li>
+        <li><strong>Show your bookmarks bar:</strong>
+            <ul>
+                <li><strong>Chrome:</strong> Press <code>Ctrl+Shift+B</code> (Windows/Linux) or <code>Cmd+Shift+B</code> (Mac).</li>
+                <li><strong>Edge:</strong> Press <code>Ctrl+Shift+B</code> (Windows/Linux) or <code>Cmd+Shift+B</code> (Mac).</li>
+            </ul>
+        </li>
+        <li><strong>Drag the "Drag Me!" button above to your bookmarks bar.</strong></li>
+        <li><strong>Use the bookmarklet:</strong> Navigate to any webpage and click the bookmarklet in your bookmarks bar.</li>
     </ol>
+    <h2>Troubleshooting</h2>
+    <p>If you're unable to drag the button:</p>
+    <ol>
+        <li>Right-click the "Drag Me!" button.</li>
+        <li>Select <strong>"Bookmark this link"</strong> or <strong>"Add to Favorites"</strong>.</li>
+        <li>Ensure the URL begins with <code>javascript:</code>.</li>
+    </ol>
+    <p>If you have any issues, please contact us.</p>
 </body>
 </html>
