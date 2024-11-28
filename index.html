@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarklet Page</title>
+</head>
+<body>
+    <h1>Add the Bookmarklet</h1>
+    <p>Drag the link below to your bookmarks bar:</p>
+    <a href="javascript:(function(){var script=document.createElement('script');script.src='https://cdn.jsdelivr.net/gh/ufst-my/bookmarklet-checker@main/bookmarklet.js?cache-buster=%27+(new Date().getTime());script.type=%27text/javascript%27;document.body.appendChild(script);})();">My Bookmarklet</a>
+    <p>If drag-and-drop doesn’t work, follow these steps:</p>
+    <ol>
+        <li>Right-click the link above and select <strong>“Copy link address”</strong>.</li>
+        <li>Open your bookmarks bar and create a new bookmark.</li>
+        <li>Paste the copied address into the URL field.</li>
+    </ol>
+</body>
+</html>
