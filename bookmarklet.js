@@ -11,7 +11,7 @@ javascript:(function(){
     function updateProgress() {
         processedCount++;
         var pct = Math.round((processedCount / totalIds) * 100);
-        document.title = 'Processing: ' + pct + '% - ' + originalTitle;
+        document.title = 'Markerer: ' + pct + '% - ' + originalTitle;
     }
 
     // Access the main frame and the inner iframe
