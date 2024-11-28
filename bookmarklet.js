@@ -12,7 +12,7 @@ javascript:(function() {
     function updateProgress() {
         processedCount++;
         var pct = Math.round((processedCount / totalIds) * 100);
-        document.title = 'Markerer: ' + pct + '% - ' + originalTitle;
+        document.title = 'Markerer: ' + pct + '% -- ' + originalTitle;
     }
 
     var f = window.frames['main']; // Framename
