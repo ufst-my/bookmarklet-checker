@@ -1,3 +1,4 @@
+// After commit: run: https://purge.jsdelivr.net/gh/ufst-my/bookmarklet-checker@main/bookmarklet.js
 javascript:(function() {
     var inputIds = prompt('Indtast fordringsIDs adskilt af komma eller linjeskift:', '');
     if (!inputIds) return;
